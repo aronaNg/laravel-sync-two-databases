@@ -31,4 +31,11 @@ class NewTableController extends Controller
 
         return response()->json($oldRecord, 200);
     }
+
+    public function latest()
+    {
+        $latestRecord = NewTableModel::latest()->first();
+        return response()->json($latestRecord, 200);
+    }
+
 }

@@ -13,3 +13,4 @@ Route::put('/old_table/{id}', [OldTableController::class, 'update']);
 
 Route::post('/new_table', [NewTableController::class, 'store']);
 Route::put('/new_table/{id}', [NewTableController::class, 'update']);
+Route::get('/new_table/latest', [NewTableController::class, 'latest']);

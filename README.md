@@ -1,3 +1,14 @@
+curl -X POST http://127.0.0.1:8000/api/new_table \
+    -H "Content-Type: application/json" \
+    -d '{"name": "Arona NGOM", "mobile": "123456789"}'
+
+
+curl -X PUT http://127.0.0.1:8000/api/new_table/1 \
+    -H "Content-Type: application/json" \
+    -d '{"name": "Arona Kebe", "mobile": "987654321"}'
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
